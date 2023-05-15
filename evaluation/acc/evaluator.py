@@ -31,10 +31,10 @@ def strs_from_file(path):
     return lines
 
 if __name__ == "__main__":
-    # hyp_path = sys.argv[1] # pred
-    # ref_path = sys.argv[2] # gold
-    hyp_path = r'E:\Courses\NLP\openai\general\code_repair_ape\medium\eval\medium_pred.txt'
-    ref_path = r'E:\Courses\NLP\openai\general\code_repair_ape\medium\eval\medium_true.txt'
+    hyp_path = sys.argv[1] # pred
+    ref_path = sys.argv[2] # gold
+    # hyp_path = r'E:\Courses\NLP\openai\general\code_repair_ape\medium\eval\medium_pred.txt'
+    # ref_path = r'E:\Courses\NLP\openai\general\code_repair_ape\medium\eval\medium_true.txt'
     hyp = strs_from_file(hyp_path)
     ref = strs_from_file(ref_path)
     acc = 0
