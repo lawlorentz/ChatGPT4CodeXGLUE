@@ -23,7 +23,7 @@ def tokenize_json(path):
     text = data['response']["choices"][0]["message"]["content"]
 
     def process(t):
-        t = html.unescape(t.lower())
+        # t = html.unescape(t.lower())
         # t = re.sub('<[^>]*>', '', t)
         # t = t.replace('/n', '')
         # t = t.replace(' ','')
